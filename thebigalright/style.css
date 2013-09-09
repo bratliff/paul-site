@@ -1,0 +1,245 @@
+/*
+Theme Name:     bigalright
+Theme URI:      http://example.com/
+Description:    Child theme from Twenty 13 Theme
+Author:         Bunko
+Author URI:     http://www.2bitcreative.com
+Template:       twentythirteen                            
+Version:        0.1.0
+*/
+
+@import url("../twentythirteen/style.css");
+
+.site-header{
+height:150px;
+background-image:none;
+}
+.site-header .home-link{
+min-height:150px;
+}
+
+.site-title {
+padding:30px 0 0 0;
+font-family: 'Oswald', sans-serif;
+text-transform:uppercase;
+font-size:3.5em;
+opacity:0.7;
+letter-spacing:3px;
+}
+
+.site-header .site-title:hover {
+text-decoration:none !important;
+}
+.site-description {
+margin:0 0 0 0;
+}
+#main {
+color:#333;
+margin-top:45px;
+}
+.navbar {
+background-color:#000;
+}
+.nav-menu li a {
+color: #fff;
+background:#000;
+}
+.nav-menu ul li a:hover, nav-menu ul li a:link, .nav-menu ul li a:active {
+color: #fc0;
+background: #000;
+}
+
+.nav-menu .sub-menu, .nav-menu .children {
+border:none;
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+color: #fc0;
+}
+
+.menu-toggle {
+color:#fff;
+}
+
+.search-field {
+color:#fff;
+}
+
+.entry-content, .entry-title {
+	position:relative;
+	z-index:5;
+}
+
+blockquote {
+margin:0;
+}
+
+.entry-title {
+font-family: 'Arial', 'Helvetica', sans-serif;
+font-size:2.3em;
+letter-spacing:7px;
+text-transform:lowercase;
+margin-top:-60px;
+}
+
+#Abou .entry-title, #Expe .entry-title, #Pers .entry-title {
+font-family: 'Oswald', sans-serif;
+text-transform:uppercase;
+opacity:0.7;
+margin-left:-20px;
+font-size:2.5em;
+margin-top:70px;
+}
+
+#Abou .entry-content, #Expe .entry-content, #Pers .entry-content {
+margin-bottom:70px;
+}
+
+
+#backbutton {
+	padding:10px;
+	background-color:#000;
+	color:#fff;
+	width:200px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	cursor:pointer;
+	display:none;
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#000));
+	background: -moz-linear-gradient(top,  #333,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#000000');
+}
+
+.moveElem {
+	position:absolute;
+	z-index:2;
+}
+
+.moveElem1 {
+	width:300px;
+	height:250px;
+	background:url(http://paulratliff.com/wp-content/uploads/2013/09/camera_bw.png) no-repeat;
+	background-size:cover;
+	top:250px;
+	left:-300px;
+}
+
+.moveElem2 {
+	width:153px;
+	height:180px;
+	background:url() no-repeat;
+	background-size:cover;
+	top:1000px;
+	left:-300px;
+}
+
+.moveElem3 {
+	width:250px;
+	height:250px;
+	background:url() no-repeat;
+	background-size:cover;
+	top:2000px;
+	right:-300px;
+}
+
+.moveElem4 {
+	width:120px;
+	height:200px;
+	background:url(http://paulratliff.com/wp-content/uploads/2013/09/lightbulb_white1.png) no-repeat;
+	background-size:100%;
+	top:3850px;
+	left:-500px;
+}
+
+.moveElem5 {
+	width:250px;
+	height:250px;
+	background:url(http://paulratliff.com/wp-content/uploads/2013/09/eye.png) no-repeat;
+	top:6200px;
+	left:50px;
+}
+
+
+
+#Abou {
+  background:url(http://paulratliff.com/wp-content/uploads/2013/09/grid_bg.gif) repeat;
+}
+#Expe, #Clie, #Ethn, #Desi {
+  /*ackground-color:#b24e2a;*/
+  background:url(http://paulratliff.com/wp-content/uploads/2013/09/grid_bg.gif) repeat;
+}
+#Pers, #What, #Read, #Dail {
+/*background-color:#788b73;*/
+background:url(http://paulratliff.com/wp-content/uploads/2013/09/grid_bg.gif) repeat;
+}
+#Desi, #Dail {
+padding-bottom:110px;
+}
+
+.divider {
+height:30px;
+width:100px;
+background:url(http://paulratliff.com/wp-content/uploads/2013/09/divider.gif) no-repeat;
+}
+
+.nav-menu .children ul:hover {
+background:#424c32 !important;
+}
+
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	position:fixed;
+	bottom:40px;
+	right:30px;
+}
+
+.return {
+display:none;
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+/* black */
+.black {
+	color: #d7d7d7;
+	border: solid 1px #333;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#000));
+	background: -moz-linear-gradient(top,  #333,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#000000');
+}
+.black:hover {
+	background: #000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+	background: -moz-linear-gradient(top,  #222,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#222', endColorstr='#000000');
+}
+.black:active {
+	color: #666;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#222));
+	background: -moz-linear-gradient(top,  #000,  #222);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#333');
+}
