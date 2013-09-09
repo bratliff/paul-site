@@ -1,9 +1,11 @@
+/*global document: false */
+
 if (typeof console === "undefined") {
-            console = {
-                log: function() { },
-                debug: function() { },
-            };
-        }
+    console = {
+        log: function() { },
+        debug: function() { },
+    };
+}
 
 $(document).ready(function () {
     console.log('load jquery');
@@ -29,15 +31,29 @@ $(document).ready(function () {
         $('#backbutton').hide(500);
     });
 
+   $('body').on('click','.rightArrow',function(){
+        if($('.textCont').position().left > -1800) {
+            $(".textCont").animate({'left':'-=620px'}, 500, function(){
+                console.log($('.textCont').position().left);
+            });
+        }
+
+    });
+
+    $('body').on('click','.leftArrow',function(){
+       if($('.textCont').position().left < -600) {
+        $(".textCont").animate({'left':'+=620px'}, 500);
+        }
+    });
     ///parallaxing elements 
 
    function backgroundScroller(){
     var scrolled = $(window).scrollTop();
-        $('.moveElem1').css('top',(0-(scrolled*0.90))+250+'px');
+        /*$('.moveElem1').css('top',(0-(scrolled*0.90))+250+'px');
         $('.moveElem2').css('top',(0-(scrolled*0.50))+1100+'px');
         $('.moveElem3').css('top',(0-(scrolled*0.80))+2000+'px');
         $('.moveElem4').css('top',(0-(scrolled*0.6))+2800+'px');
-        $('.moveElem5').css('top',(0-(scrolled*1.2))+6200+'px');
+        $('.moveElem5').css('top',(0-(scrolled*1.2))+6200+'px');*/
 
         var elemX1 = true;
         var elemX2 = true;
