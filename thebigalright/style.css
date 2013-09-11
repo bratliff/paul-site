@@ -57,6 +57,18 @@ color: #fc0;
 background: #333;
 }
 
+.nav-menu ul li.page-item-2 a:hover {
+	background:#7d9971;
+}
+
+.nav-menu ul li.page-item-14 a:hover {
+	background:#385e99;
+}
+
+.nav-menu ul li.page-item-22 a:hover {
+	background:#b6570a;
+}
+
 .nav-menu .sub-menu, .nav-menu .children {
 border:none;
 }
@@ -84,6 +96,10 @@ margin:0;
 font-size:1.2em;
 }
 
+.entry-header {
+margin-bottom:15px;
+}
+
 .entry-title {
 font-family: 'Arial', 'Helvetica', sans-serif;
 font-size:1.2em;
@@ -97,7 +113,7 @@ font-family: 'Arial','Helvetica', sans-serif;
 opacity:0.7;
 margin-left:-20px;
 font-size:2.5em;
-margin-top:70px;
+margin-top:35px;
 letter-spacing:3px;
 text-transform:lowercase;
 }
@@ -115,7 +131,7 @@ color:#b6570a;
 }
 
 #Abou .entry-content, #Expe .entry-content, #Pers .entry-content {
-margin-bottom:70px;
+margin-bottom:0px;
 }
 
 
@@ -192,8 +208,8 @@ background:#fff;
 	width:100px;
 	height:100px;
 	background:url(http://paulratliff.com/wp-content/uploads/2013/09/eye.png) no-repeat;
-        background-size:100%;
-	top:2480px;
+    background-size:100%;
+	top:px;
 	left:-300px;
 }
 
@@ -230,20 +246,20 @@ background:#fff;
 
 #Abou {
   background:url(http://paulratliff.com/wp-content/uploads/2013/09/grid_bg.gif) repeat;
+  background-attachment:fixed;
 }
 #Expe, #Clie, #Ethn, #Desi {
   /*ackground-color:#b24e2a;*/
   background:url(http://paulratliff.com/wp-content/uploads/2013/09/grid_bg.gif) repeat;
+  background-attachment:fixed;
 }
 #Pers, #What, #Read, #Dail {
 /*background-color:#788b73;*/
 background:url(http://paulratliff.com/wp-content/uploads/2013/09/grid_bg.gif) repeat;
 }
-#Desi, #Dail {
-padding-bottom:110px;
-}
+
 #What {
-margin-top:-90px;
+	margin-top:-40px;
 }
 
 .divider {
@@ -270,7 +286,7 @@ display:none;
 
 .persCont {
 	overflow:hidden;
-	height:600px;
+	height:550px;
 }
 
 .textCont {
@@ -312,6 +328,7 @@ display:none;
 .clients {
 float:left;
 width:200px;
+margin-top:-20px;
 }
 
 .site-footer {

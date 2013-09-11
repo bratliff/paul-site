@@ -59,11 +59,11 @@ $(document).ready(function () {
 
    function backgroundScroller(){
     var scrolled = $(window).scrollTop();
-        /*$('.moveElem1').css('top',(0-(scrolled*0.90))+250+'px');
+        $('.moveElem1').css('top',(0-(scrolled*0.60))+240+'px');
         $('.moveElem2').css('top',(0-(scrolled*0.50))+1100+'px');
         $('.moveElem3').css('top',(0-(scrolled*0.80))+2000+'px');
-        $('.moveElem4').css('top',(0-(scrolled*0.6))+2800+'px');
-        $('.moveElem5').css('top',(0-(scrolled*1.2))+6200+'px');*/
+        $('.moveElem4').css('top',(0-(scrolled*0.6))+1400+'px');
+        $('.moveElem5').css('top',(0-(scrolled*0.40))+3200+'px');
 
         $('#backbutton').css({display:"block"});
 
@@ -90,14 +90,14 @@ $(document).ready(function () {
             }
         }
 
-        if (scrolled > 1300) {
+        if (scrolled > 600) {
             if (elemX4) {
                 $('.moveElem4').animate({left:'20px'}, 600);
                 elemX4 = false;
             }
         }
 
-        if (scrolled > 2400) {
+        if (scrolled > 2000) {
             if (elemX5) {
                 $('.moveElem5').animate({left:'20px'}, 600);
                 elemX5 = false;
