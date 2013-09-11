@@ -59,20 +59,6 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post -->
 
-				<!-- clients page content -->
-
-				<article id="Clie" <?php post_class(); ?>>
-					<header class="entry-header">
-
-						<h1 class="entry-title"><?php echo get_the_title(20); ?> </h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<?php echo get_post_field('post_content', 20); ?>
-					</div><!-- .entry-content -->
-
-				</article><!-- #post -->
-
 				<!-- ethnography page content -->
 
 				<article id="Ethn" <?php post_class(); ?>>
@@ -100,7 +86,22 @@ get_header(); ?>
 
 					</div><!-- .entry-content -->
 					
-				</article><!-- #post -->
+				</article>
+                
+                <!-- clients page content -->
+
+				<article id="Clie" <?php post_class(); ?>>
+					<header class="entry-header">
+
+						<h1 class="entry-title"><?php echo get_the_title(20); ?> </h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<?php echo get_post_field('post_content', 20); ?>
+					</div><!-- .entry-content -->
+
+				</article>
+
 
 				<!-- perspectives page content -->
 
@@ -132,19 +133,6 @@ get_header(); ?>
 
 				</article><!-- #post -->
 
-				<!-- reading list -->
-
-				<article id="Read" <?php post_class(); ?>>
-					<header class="entry-header">
-
-						<h1 class="entry-title"><?php echo get_the_title(26); ?> </h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<?php echo get_post_field('post_content', 26); ?>
-					</div><!-- .entry-content -->
-
-				</article><!-- #post -->
 
 				<!-- daily ordfinary joy -->
 
@@ -159,6 +147,20 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 
 				</article><!-- #post -->	
+                
+                			<!-- reading list -->
+
+				<article id="Read" <?php post_class(); ?>>
+					<header class="entry-header">
+
+						<h1 class="entry-title"><?php echo get_the_title(26); ?> </h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<?php echo get_post_field('post_content', 26); ?>
+					</div><!-- .entry-content -->
+
+				</article><!-- #post -->
 
 			<?php endwhile; ?>
 

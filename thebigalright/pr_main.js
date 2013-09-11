@@ -32,17 +32,27 @@ $(document).ready(function () {
     });
 
    $('body').on('click','.rightArrow',function(){
-        if($('.textCont').position().left > -1800) {
+         $('.leftArrow').css({'cursor':'pointer'}).animate({'opacity':'1'});
+
+        if ($('.textCont').position().left > -1800) {
             $(".textCont").animate({'left':'-=620px'}, 500, function(){
-                console.log($('.textCont').position().left);
+                if ($('.textCont').position().left < -1800) {
+                    $('.rightArrow').css({'cursor':'default'}).animate({'opacity':'0.1'}, 100);
+                }
             });
         }
 
     });
 
     $('body').on('click','.leftArrow',function(){
+        $('.rightArrow').css({'cursor':'pointer'}).animate({'opacity':'1'});
+
        if($('.textCont').position().left < -600) {
-        $(".textCont").animate({'left':'+=620px'}, 500);
+        $(".textCont").animate({'left':'+=620px'}, 500, function(){
+            if($('.textCont').position().left > -600) {
+                $('.leftArrow').css({'cursor':'default'}).animate({'opacity':'0.1'}, 100);
+            }
+        });
         }
     });
     ///parallaxing elements 
@@ -55,6 +65,8 @@ $(document).ready(function () {
         $('.moveElem4').css('top',(0-(scrolled*0.6))+2800+'px');
         $('.moveElem5').css('top',(0-(scrolled*1.2))+6200+'px');*/
 
+        $('#backbutton').css({display:"block"});
+
         var elemX1 = true;
         var elemX2 = true;
         var elemX3 = true;
@@ -66,7 +78,7 @@ $(document).ready(function () {
             elemX1 = false;
         }
 
-        if (scrolled < 500) {
+        if (scrolled < 10) {
             $('#backbutton').css({display:"none"});
         }
 
@@ -78,17 +90,17 @@ $(document).ready(function () {
             }
         }
 
-        if (scrolled > 1000) {
-            if (elemX3) {
-                $('.moveElem3').animate({right:'0px'}, 600);
-                elemX2 = false;
+        if (scrolled > 1300) {
+            if (elemX4) {
+                $('.moveElem4').animate({left:'20px'}, 600);
+                elemX4 = false;
             }
         }
 
-        if (scrolled > 2200) {
-            if (elemX4) {
-                $('.moveElem4').animate({left:'100px'}, 600);
-                elemX4 = false;
+        if (scrolled > 2400) {
+            if (elemX5) {
+                $('.moveElem5').animate({left:'20px'}, 600);
+                elemX5 = false;
             }
         }
     }

@@ -10,8 +10,12 @@ Version:        0.1.0
 
 @import url("../twentythirteen/style.css");
 
+body {
+width:100%;
+}
+
 .site-header{
-height:150px;
+height:240px;
 background-image:none;
 }
 .site-header .home-link{
@@ -19,34 +23,38 @@ min-height:150px;
 }
 
 .site-title {
-padding:30px 0 0 0;
-font-family: 'Oswald', sans-serif;
-text-transform:uppercase;
-font-size:3.5em;
-opacity:0.7;
-letter-spacing:3px;
+padding:60px 0 0 0;
+font-family: 'Oswald', 'Walter Turncoat', sans-serif;
+font-size:3.6em;
+opacity:1;
 }
 
 .site-header .site-title:hover {
 text-decoration:none !important;
 }
 .site-description {
-margin:0 0 0 0;
+margin:5px 0 0 0;
+font-size:1em;
 }
 #main {
 color:#333;
-margin-top:45px;
+margin-top:36px;
 }
 .navbar {
-background-color:#000;
+background-color:#666;
+margin-top:80px;
+}
+.nav-menu li {
+padding:0;
 }
 .nav-menu li a {
 color: #fff;
-background:#000;
+background:#666;
+font-size:1em;
 }
 .nav-menu ul li a:hover, nav-menu ul li a:link, .nav-menu ul li a:active {
 color: #fc0;
-background: #000;
+background: #333;
 }
 
 .nav-menu .sub-menu, .nav-menu .children {
@@ -55,6 +63,7 @@ border:none;
 
 .nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
 color: #fc0;
+font-style: normal;
 }
 
 .menu-toggle {
@@ -70,25 +79,39 @@ color:#fff;
 	z-index:5;
 }
 
-blockquote {
+.entry-content blockquote {
 margin:0;
+font-size:1.2em;
 }
 
 .entry-title {
 font-family: 'Arial', 'Helvetica', sans-serif;
-font-size:2.3em;
-letter-spacing:7px;
-text-transform:lowercase;
-margin-top:-60px;
+font-size:1.2em;
+letter-spacing:18px;
+text-transform:uppercase;
+margin-top:-30px;
 }
 
 #Abou .entry-title, #Expe .entry-title, #Pers .entry-title {
-font-family: 'Oswald', sans-serif;
-text-transform:uppercase;
+font-family: 'Arial','Helvetica', sans-serif;
 opacity:0.7;
 margin-left:-20px;
 font-size:2.5em;
 margin-top:70px;
+letter-spacing:3px;
+text-transform:lowercase;
+}
+
+#Abou .entry-title {
+color:#7d9971;
+}
+
+#Expe .entry-title {
+color:#385e99;
+}
+
+#Pers .entry-title {
+color:#b6570a;
 }
 
 #Abou .entry-content, #Expe .entry-content, #Pers .entry-content {
@@ -97,25 +120,31 @@ margin-bottom:70px;
 
 
 #backbutton {
-	padding:10px;
-	background-color:#000;
-	color:#fff;
-	width:200px;
+	padding:5px;
+	color:#000;
+	width:160px;
 	position:fixed;
 	bottom:20px;
 	right:20px;
 	cursor:pointer;
 	display:none;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Arial', 'Helvetica', sans-serif;
 	text-decoration: none;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+        text-align:center;
+        text-transform:uppercase;
+        font-size:0.6em;
 	-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
 	border-radius: .5em;
-	background: #333;
-	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#000));
-	background: -moz-linear-gradient(top,  #333,  #000);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#000000');
+	border: 1px dotted #000;
+	/*background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#999));
+	background: -moz-linear-gradient(top,  #CCC,  #999);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#000000');*/
+}
+
+#backbutton:hover {
+background:#fff;
 }
 
 .moveElem {
@@ -124,11 +153,11 @@ margin-bottom:70px;
 }
 
 .moveElem1 {
-	width:300px;
-	height:250px;
-	background:url(http://paulratliff.com/wp-content/uploads/2013/09/camera_bw.png) no-repeat;
+	width:190px;
+	height:150px;
+	background:url(http://paulratliff.com/wp-content/uploads/2013/09/camera_bw1.png) no-repeat;
 	background-size:cover;
-	top:250px;
+	top:180px;
 	left:-300px;
 }
 
@@ -151,23 +180,53 @@ margin-bottom:70px;
 }
 
 .moveElem4 {
-	width:120px;
-	height:200px;
+	width:90px;
+	height:170px;
 	background:url(http://paulratliff.com/wp-content/uploads/2013/09/lightbulb_white1.png) no-repeat;
 	background-size:100%;
-	top:3850px;
+	top:1400px;
 	left:-500px;
 }
 
 .moveElem5 {
-	width:250px;
-	height:250px;
+	width:100px;
+	height:100px;
 	background:url(http://paulratliff.com/wp-content/uploads/2013/09/eye.png) no-repeat;
-	top:6200px;
-	left:50px;
+        background-size:100%;
+	top:2480px;
+	left:-300px;
 }
 
+.works_image {
+	width:40px;
+	height:40px;
+	background:#349059;
+	float:right;
+	padding-left:10px;
+}
 
+#brain_pic {
+   background:url(http://paulratliff.com/wp-content/uploads/2013/09/brain.png) no-repeat;
+   width:120px;
+   height:100px;
+}
+
+#book_pic {
+	background:url(http://paulratliff.com/wp-content/uploads/2013/09/book_bw2.png) no-repeat;
+	width:120px;
+	height:80px;
+	background-size:90%;
+}
+#design_pic {
+	background:url(http://paulratliff.com/wp-content/uploads/2013/09/hand-shake-bw.png) no-repeat;
+	width:150px;
+	height:97px;
+}
+#research_pic {
+	background:url(http://paulratliff.com/wp-content/uploads/2013/09/telescope_bw.png) no-repeat;
+	width:120px;
+	height:154px;
+}
 
 #Abou {
   background:url(http://paulratliff.com/wp-content/uploads/2013/09/grid_bg.gif) repeat;
@@ -183,6 +242,9 @@ background:url(http://paulratliff.com/wp-content/uploads/2013/09/grid_bg.gif) re
 #Desi, #Dail {
 padding-bottom:110px;
 }
+#What {
+margin-top:-90px;
+}
 
 .divider {
 height:30px;
@@ -194,22 +256,6 @@ background:url(http://paulratliff.com/wp-content/uploads/2013/09/divider.gif) no
 background:#424c32 !important;
 }
 
-.button {
-	display: inline-block;
-	outline: none;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
-	padding: .5em 2em .55em;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em; 
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-	position:fixed;
-	bottom:40px;
-	right:30px;
-}
 
 .return {
 display:none;
@@ -224,7 +270,7 @@ display:none;
 
 .persCont {
 	overflow:hidden;
-	height:800px;
+	height:600px;
 }
 
 .textCont {
@@ -240,26 +286,38 @@ display:none;
 	position:relative;
 	list-style-type:none;
 	padding:0;
-	margin:0 120px 0 20px ;
-	border:#FC0 solid 1px;
+	margin:0 120px 0 20px;
 }
 
 .leftArrow, .rightArrow {
-	height:30px;
-	width:30px;
+	height:40px;
+	width:40px;
 	background:#999;
 	position:absolute;
 	cursor:pointer;
-		z-index:2;
+	z-index:2;
+	background:url('http://paulratliff.com/wp-content/uploads/2013/09/arrows.png') no-repeat;
 }
 .leftArrow {
 	left:-10px;
 	top:200px;
-	background:url;
+	background-position:0% 100%;
 }
 
 .rightArrow {
 	right:0;
 	top:200px;
-	background:#f00;
+	background-position:0% 0%;
+}
+.clients {
+float:left;
+width:200px;
+}
+
+.site-footer {
+background:#000;
+}
+
+.site-info {
+color:#999;
 }
