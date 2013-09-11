@@ -286,17 +286,31 @@ display:none;
 
 .persCont {
 	overflow:hidden;
-	height:550px;
+	height:560px;
+	border:1px solid #b6570a;
 }
 
-.textCont {
-	width:3000px;
+.joyUberCont {
+	overflow:hidden;
+	height:850px;
+	border:1px solid #b6570a;
+}
+
+.worksCont, .joyCont {
 	list-style-type:none;
 	padding:0;
 	position:relative;
 }
 
-.textCont li {
+.worksCont {
+	width:3000px;
+}
+
+.joyCont {
+	width:20000px;
+}
+
+.worksCont li, .joyCont li {
 	float:left;
 	width:480px;
 	position:relative;
@@ -305,24 +319,24 @@ display:none;
 	margin:0 120px 0 20px;
 }
 
-.leftArrow, .rightArrow {
-	height:40px;
-	width:40px;
+.leftArrow, .rightArrow, .leftArrowJoy, .rightArrowJoy {
+	height:50px;
+	width:50px;
 	background:#999;
 	position:absolute;
 	cursor:pointer;
 	z-index:2;
-	background:url('http://paulratliff.com/wp-content/uploads/2013/09/arrows.png') no-repeat;
+	background:url('http://paulratliff.com/wp-content/uploads/2013/09/orange_arrows.png') no-repeat;
 }
-.leftArrow {
-	left:-10px;
-	top:200px;
+.leftArrow, .leftArrowJoy {
+	left:-25px;
+	top:300px;
 	background-position:0% 100%;
 }
 
-.rightArrow {
-	right:0;
-	top:200px;
+.rightArrow, .rightArrowJoy {
+	right:-25px;
+	top:300px;
 	background-position:0% 0%;
 }
 .clients {
